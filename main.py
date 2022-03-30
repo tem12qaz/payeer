@@ -13,6 +13,6 @@ def hello_world():
         orderid='1',
         amount='10.00',
         curr='RUB',
-        desc=base64.b64encode(bytes('Test payment')),
+        desc=base64.b64encode(bytes('Test payment', encoding='utf-8')),
         sign='y562xRkL89549065gjkp6ycvbe34qxbnjk8'
     )
