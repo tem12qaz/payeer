@@ -1,0 +1,4 @@
+SHOP = '1630953878'
+CURRENCY = 'RUB'
+DESCRIPTION = 'Payment'
+SECRET_KEY = 'hjvgvh65789nuio'
