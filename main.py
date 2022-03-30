@@ -1,11 +1,14 @@
 import base64
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/", methods=['GET', 'POST'])
 def hello_world():
+    if request.method == 'POST':
+        print(request.data)
+        print(request)
     return render_template(
         'form.html',
         action='https://4roonas.xyz',
